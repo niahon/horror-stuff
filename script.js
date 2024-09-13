@@ -6,15 +6,16 @@ elBurger.addEventListener("click", () => {
     elMenu.classList.toggle("invisible");
 })
 
-console.log(elMenuItems)
 
 for (let element of elMenuItems) {
     element.addEventListener("click", (e) => {
         e.target.classList.toggle("opened");
         for (let element of e.target.children) {
-            element.classList.toggle("invisible");
-            console.log(element.classList);
-            console.log(e.target.classList);
+            if (element.classList.contains("sub-items")) {
+                element.classList.toggle("invisible");
+            } else {
+                element.classList.toggle("expanded-arrow");
+            }
         }
     })
 }

@@ -4,7 +4,7 @@
     --background-color: #140000;
     --primary-color: #d3a2a4;
     --secondary-color: #a10c0c;
-    --accent-color: #ff1f1f;
+    --accent-color: #ff4848;
 }
 
 html {
@@ -25,6 +25,10 @@ html {
 a {
     color: var(--accent-color);
 }
+
+    a:hover {
+        cursor: pointer;
+    }
 
 body {
     background-color: var(--background-color);
@@ -111,11 +115,24 @@ nav {
         padding-top: 0.75rem;
         padding-bottom: 0.75rem;
     }
-
-
-    .dropdown a {
-        padding: 0.75rem 0 0.75rem 1.5rem;
-    }
+        #teste {
+            margin-top: 0.5rem;
+        }
+        .dropdown a {
+            padding: 0.75rem 0 0.75rem 1.5rem;
+        }
+        .arrow::after {
+            content: '';
+            background-image: url(img/caret-down-fill.png);
+            background-repeat: round;
+            margin-left: 0.5rem;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+        }
+        .expanded-arrow::after {
+            background-image: url(img/caret-up-fill.png);
+        }
 
 /* MAIN */
 main {
@@ -154,6 +171,28 @@ main {
             .small-preview .tag {
                 color: var(--text-color)
             }
+            
+/* FOOTER */
+footer {
+    margin: 1rem 1rem;
+    padding: 1rem 0.25rem 0;
+    border-top: 2px solid white;
+}
+    #github {
+        display: inline-block;
+        margin-top: 0.5rem;
+    }
+    #github::before {
+        content: '';
+        background-image: url(img/github.png);
+        background-repeat:round;
+        vertical-align:bottom;
+        margin-right: 0.25rem;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+    }
+
 
 /* SCRIPTS */
 

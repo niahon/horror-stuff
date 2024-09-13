@@ -1,5 +1,6 @@
 :root {
     --text-color: #f4e9e9;
+    --inverse-text-color: #131212;
     --background-color: #140000;
     --primary-color: #d3a2a4;
     --secondary-color: #a10c0c;
@@ -28,6 +29,19 @@ a {
 body {
     background-color: var(--background-color);
     color: var(--text-color);
+    font-family: Geneva, Verdana, Tahoma, sans-serif;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+img {
+    max-width: 100%;
 }
 
 /* HEADER */
@@ -69,8 +83,8 @@ nav {
     #menu {
         list-style: none;
         grid-column: span 2;
-        background-color: var(--primary-color);
-        color: var(--accent-color);
+        background-color: var(--secondary-color);
+        color: var(--text-color);
     }
 
     #menu > * {
@@ -102,6 +116,44 @@ nav {
     .dropdown a {
         padding: 0.75rem 0 0.75rem 1.5rem;
     }
+
+/* MAIN */
+main {
+    margin: 2rem 1.25rem;
+}
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+        .big-preview {
+            margin: 2rem auto 3rem;
+        }
+            .tag-container {
+                display: flex;
+                gap: 1rem;
+            }
+                .tag {
+                    background-color: var(--secondary-color);
+                    padding: 0.2rem 0.4rem;
+                    border-radius: 15%;
+                }
+    .other-recent-articles {
+        background-color: var(--primary-color);
+        color: var(--inverse-text-color);
+        padding: 1rem 1rem;
+    }
+        .small-preview {
+            padding-top: 1.5rem;
+            margin: 1.5rem 0;
+            border-top: 2px solid black;
+        }
+        .small-preview:first-of-type {
+            margin-top: 0.25rem;
+        }
+            .small-preview .tag {
+                color: var(--text-color)
+            }
 
 /* SCRIPTS */
 

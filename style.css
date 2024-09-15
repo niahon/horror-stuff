@@ -44,6 +44,10 @@ h3 {
     font-size: 22px;
 }
 
+h5 {
+    font-weight: normal;
+}
+
 img {
     max-width: 100%;
 }
@@ -172,6 +176,57 @@ main {
             .small-preview .tag {
                 color: var(--text-color)
             }
+
+/* WIKI-GAMES */
+#form-title {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+        gap: 0.25rem;
+    }
+#wiki-search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+    .wiki-search-result {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.5fr 0.25fr 0.5fr 4fr;
+        align-items: center;
+    }
+        .wiki-search-result h3 {
+            grid-column: span 2;
+        }
+        .wiki-search-result h5 {
+            grid-column: span 2;
+        }
+        .wiki-search-result img {
+            grid-row: span 2;
+        }
+        .wiki-search-result img,
+        .tag-container {
+            margin-top: 0.5rem;
+        }
+
+        .search-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+
             
 /* FOOTER */
 footer {

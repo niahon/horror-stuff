@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Horror Wiki</title>
+        <link rel=stylesheet href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1 id="site-logo"><a href="index.html">Horrory Stuff</a></h1>
+                <input type="search">
+                <div id="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="menu" class="invisible">
+                    <li class="single-item"><a href="">News</a></li>
+                    <li class="dropdown">
+                        <span class="arrow">Wiki</span>
+                        <ul class="sub-items invisible">
+                            <li id="teste"><a href="wiki-games.html">Games</a></li>
+                            <li><a href="">Movies</a></li>
+                            <li><a href="">Books</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <span class="arrow">Articles</span>
+                        <ul class="sub-items invisible">
+                            <li><a href="">Games</a></li>
+                            <li><a href="">Movies</a></li>
+                            <li><a href="">Books</a></li>
+                        </ul>
+                    </li>
+                    <li class="single-item"><a href="">About us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2 id="form-title">FILTER GAMES BY:</h2>
+            <form>
+                <label for="keyword">Title:</label>
+                <input type="text" id="keyword" name="keyword">
+                <label for="game-date">Release Date:</label>
+                <input type="number" min="1900" max="2100" id="game-date" name="game-date">
+                <fieldset>
+                    <legend>Tag(s):</legend>
+                        <div>
+                            <input type="checkbox" id="survival"> 
+                            <label for="survival">Survival Horror</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="indie"> 
+                            <label for="survival">Indie</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="survival"> 
+                            <label for="survival">AAA</label>
+                        </div>
+                </fieldset>
+            </form>
+            <div id="wiki-search-container">
+                <div class="wiki-search-result">
+                    <h3>Game Name</h3>
+                    <h5>March 31st 2013</h5>
+                    <img src="https://picsum.photos/270/250" alt="">
+                    <div class="tag-container">
+                        <span class="tag">Tag 1</span>
+                        <span class="tag">Tag 2</span>
+                        <span class="tag">Tag 3</span>
+                    </div>
+                    <div class="search-info">
+                        <p>Developed by: <span>Dev team</span></p>
+                        <p>Published by: <span>Publisher</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt numquam ullam neque voluptates aspernatur repellendus cupiditate illum recusandae deleniti nihil dicta doloremque consequatur libero veniam aut aliquam, et, mollitia delectus.</p>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

@@ -197,8 +197,8 @@ form {
 #wiki-search-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    margin: 2rem 0;
+    gap: 3.5rem;
+    margin: 4rem 0;
 }
     .wiki-search-result {
         display: grid;

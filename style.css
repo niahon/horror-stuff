@@ -220,6 +220,10 @@ form {
             margin-top: 0.5rem;
         }
 
+        .tag-container {
+            margin-bottom: 0.5rem;
+        }
+
         .search-info {
             display: flex;
             flex-direction: column;
